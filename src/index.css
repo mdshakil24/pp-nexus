@@ -1,28 +1,221 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
 }
+
 html {
   overflow-x: hidden !important;
   scroll-behavior: smooth;
 }
-h1,h2,h3,h4,h5,h6,p{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
-input, button, textarea, select {
+
+input,
+button,
+textarea,
+select {
   outline: none;
 }
-a:hover{
+
+a:hover {
   text-decoration: none;
 }
-a,span {
+
+a,
+span {
   display: inline-block;
   text-decoration: none;
 }
-ul,li{
-  margin:0;
-  padding:0;
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 48px;
+  color: #120C2E;
+  text-transform: inherit;
+  line-height: normal;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #1E1E1E;
+  text-transform: inherit;
+  line-height: normal;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+  text-transform: capitalize;
+  line-height: normal;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #120C2E;
+  text-transform: inherit;
+  line-height: normal;
+}
+
+.similar-btn {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  text-transform: capitalize;
+  line-height: normal;
+  background-image: linear-gradient(to right, #A28BFA 0%, #CE70C1 51%, #D56B70 100%);
+  padding: 10px 35px;
+  border-radius: 30px;
+  border: none;
+}
+
+.similar-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  background-image: linear-gradient(to right, #A28BFA 0%, #CE70C1 51%, #D56B70 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: .3s;
+}
+
+.similar-link:hover {
+  background-image: linear-gradient(to left, #A28BFA 0%, #CE70C1 51%, #D56B70 100%);
+}
+
+.similar-link-icon {
+  background-image: linear-gradient(to right, #A28BFA 0%, #CE70C1 51%, #D56B70 100%);
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  font-size: 11px;
+  color: #fff;
+  text-align: center;
+  line-height: 14px;
+  margin-left: 8px;
+}
+
+.similar-link:hover .similar-link-icon {
+  background-image: linear-gradient(to left, #A28BFA 0%, #CE70C1 51%, #D56B70 100%);
+}
+
+.signin-btn {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  text-transform: capitalize;
+  line-height: normal;
+  background-image: linear-gradient(to right, #A28BFA 0%, #CE70C1 51%, #D56B70 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: 30px;
+  padding: 10px 25px;
+  position: relative;
+  margin-right: 15px;
+}
+
+.signin-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: 30px;
+  background: linear-gradient(to right, #A28BFA 0%, #CE70C1 51%, #D56B70 100%);
+
+  /* Creating a border effect */
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+
+/*========= Start Responsive CSS Code  ==========*/
+@media all and (max-width: 1199px) [] @media all and (max-width: 991px) {
+  h1 {
+    font-size: 45px;
+  }
+
+
+}
+
+@media all and (max-width: 767px) {
+  h1 {
+    font-size: 40px;
+  }
+
+
+}
+
+@media all and (max-width: 575px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .single-category-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .single-category-icon img {
+    width: 34px;
+  }
+
+  .pp-hero-search-content button {
+    font-size: 14px;
+    padding: 12px 28px;
+  }
+
+  .pp-hero-search-input input {
+
+    font-size: 14px;
+
+    padding: 12px 15px 12px 40px;
+
+  }
+
+  .pp-hero-search-icon {
+    left: 11px;
+    top: 12px;
+    font-size: 23px;
+  }
+
+  .pp-hero-search-content {
+    margin: 40px 0;
+  }
+
+}
+
+@media all and (max-width: 450px) {
+  h1 {
+    font-size: 30px;
+  }
+
 }

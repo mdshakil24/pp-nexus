@@ -1,0 +1,101 @@
+.hero-category-heading-text h4 {
+    margin-bottom: 20px;
+}
+
+.hero-category-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.single-category-icon {
+    background-image: linear-gradient(to right, #E2DBFD 0%, #F0D3EC 48%, #F2D1D3 100%);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-category-icon img {
+    width: 40px;
+    height: auto;
+}
+
+.single-category-item {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px 10px 20px;
+}
+
+.single-category-item h3 {
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.single-category-item a {
+    justify-content: center;
+}
+
+/*========= Start Responsive CSS Code  ==========*/
+
+@media all and (max-width: 1199px) {
+    .hero-category-content {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media all and (max-width: 991px) {
+
+
+    .hero-category-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .pp-hero-area {
+        padding-top: 140px;
+    }
+
+    .pp-hero-search-content {
+        margin: 60px 0;
+    }
+}
+
+@media all and (max-width: 767px) {
+
+    .hero-category-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media all and (max-width: 575px) {
+    
+    .pp-hero-area {
+        padding-top: 125px;
+    }
+
+    .pp-hero-search-input input {
+        font-size: 14px;
+        padding: 12px 15px 12px 40px;
+    }
+    .pp-hero-search-icon {
+        left: 12px;
+        top: 12px;
+        font-size: 22px;
+    }
+    .pp-hero-search-content button {
+        font-size: 14px;
+        padding: 12px 25px;
+    }
+
+}
+
+@media all and (max-width: 450px) {
+    .hero-category-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

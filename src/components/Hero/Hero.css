@@ -1,0 +1,51 @@
+.pp-hero-area {
+    background-image: url('../../../public/assets/images/bg/hero-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 160px;
+    padding-bottom: 60px;
+}
+.pp-hero-top-content h1 {
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.pp-hero-search-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 75px;
+}
+.pp-hero-search-input {
+    max-width: 800px;
+    width: 100%;
+    position: relative;
+}
+.pp-hero-search-input input {
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    color: #868282;
+    text-transform: inherit;
+    line-height: normal;
+    padding: 16px 15px 16px 50px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.pp-hero-search-icon {
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    font-size: 30px;
+}
+.pp-hero-search-content button {
+    font-size: 18px;
+    padding: 15px 35px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
