@@ -79,6 +79,14 @@ h4 {
   line-height: normal;
 }
 
+p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #868282;
+  text-transform: inherit;
+  line-height: normal;
+}
+
 .similar-btn {
   font-weight: 600;
   font-size: 14px;
@@ -152,6 +160,29 @@ h4 {
   mask-composite: exclude;
 }
 
+.similar-heading span {
+  display: inline-flex;
+  align-items: center;
+  background-color: #180F3F;
+  padding: 2px 20px 2px 20px;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.similar-heading span img {
+  margin-right: 12px;
+}
+
+.similar-heading h2 {
+  margin-top: 20px;
+}
+
+.similar-heading h4 {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
 
 /*========= Start Responsive CSS Code  ==========*/
 @media all and (max-width: 1199px) [] @media all and (max-width: 991px) {
@@ -175,8 +206,16 @@ h4 {
     font-size: 35px;
   }
 
+  h2 {
+    font-size: 28px;
+  }
+
   h3 {
     font-size: 18px;
+  }
+
+  h4 {
+    font-size: 15px;
   }
 
   .single-category-icon {
@@ -216,6 +255,10 @@ h4 {
 @media all and (max-width: 450px) {
   h1 {
     font-size: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
   }
 
 }
