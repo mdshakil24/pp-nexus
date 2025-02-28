@@ -4,7 +4,7 @@ import { MdOutlineMail } from "react-icons/md";
 const Contact = () => {
     return (
         <div className="pp-contact-area">
-   
+            <div className="container">
                 <div className="pp-contact-content">
 
                     <div className="pp-left-contact-content">
@@ -32,44 +32,44 @@ const Contact = () => {
                                 <label htmlFor="name">Your name <span>(required)</span></label>
                                 <input type="text" id="name" placeholder='Your name' />
                             </div>
-                             {/* single field  */}
+                            {/* single field  */}
 
-                              {/* single field  */}
+                            {/* single field  */}
                             <div className="pp-single-field">
                                 <label htmlFor="cname">Company name <span>(optional)</span></label>
                                 <input type="text" id="cname" placeholder='Company name' />
                             </div>
-                             {/* single field  */}
+                            {/* single field  */}
 
-                               {/* single field  */}
+                            {/* single field  */}
                             <div className="pp-single-field">
                                 <label htmlFor="email">Your email address <span>(required)</span></label>
                                 <input type="email" id="email" placeholder='Email address' />
                             </div>
-                             {/* single field  */}
+                            {/* single field  */}
 
-                               {/* single field  */}
+                            {/* single field  */}
                             <div className="pp-single-field">
                                 <label htmlFor="subject">Subject <span>(required)</span></label>
                                 <input type="text" id="subject" placeholder='Subject' />
                             </div>
-                             {/* single field  */}
+                            {/* single field  */}
 
-                             {/* single field  */}
+                            {/* single field  */}
                             <div className="pp-single-field">
                                 <label htmlFor="message">Message <span>(required)</span></label>
-                               <textarea id="message" placeholder='Message'></textarea>
+                                <textarea id="message" placeholder='Message'></textarea>
                             </div>
-                             {/* single field  */}
+                            {/* single field  */}
 
-                             <button type='submit' className='similar-btn'>Submit</button>
+                            <button type='submit' className='similar-btn'>Submit</button>
 
 
                         </form>
                     </div>
 
                 </div>
-   
+            </div>
         </div>
     );
 };

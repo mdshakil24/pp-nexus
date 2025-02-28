@@ -3,12 +3,6 @@
     padding-bottom: 25px;
 }
 
-.pp-contact-area {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0;
-    width: 100%;
-}
 
 .pp-contact-content {
     display: flex;
@@ -50,6 +44,7 @@
 .pp-right-contact-content {
     max-width: 450px;
     margin-left: 100px;
+    width: 100%;
 }
 
 .pp-single-field {

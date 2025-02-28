@@ -1,0 +1,139 @@
+.pp-community-area {
+    background: url('/assets/images/community/community.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px 0;
+    margin-top: 150px;
+    position: relative;
+    z-index: 1;
+}
+.pp-community-area::after {
+    content: '';
+    position: absolute;
+    background: url('/assets/images/community/before.png');
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.pp-community-content {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+.single-community-content {
+    background: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.single-community-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.pp-community-heading {
+    margin-bottom: 30px;
+}
+
+.pp-community-heading h1 {
+    font-weight: 700;
+    color: #fff;
+    margin: 10px 0;
+}
+.pp-community-heading p {
+	font-size: 16px;
+	color: #fff;
+	max-width: 645px;
+	line-height: 1.6;
+	margin: 0 auto;
+}
+
+.single-community-content .progress, .progress-stacked {
+    height: 8px;
+    border-radius: 3px;
+    margin-top: -7px;
+    position: relative;
+}
+
+
+.single-community-content .progress .progress-bar {
+    background: #180F3F;
+
+}
+.single-community-content .progress {
+    position: relative;
+}
+
+
+.single-community-progress {
+    position: relative;
+}
+.progress-count {
+    position: absolute;
+    background-image: linear-gradient(to right, #A28BFA 0%, #CE70C1 51%, #D56B70 100%);
+    border: none;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    text-transform: inherit;
+    padding: 2px 4px;
+    border-radius: 3px;
+    top: -28px;
+    left: 58%;
+    z-index: 1;
+}
+.progress-count::after {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(to right, #A28BFA 0%, #CE70C1 51%, #D56B70 100%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    left: 28%;
+    top: 25px;
+    z-index: 9;
+}
+
+.single-community-content h3 {
+    font-weight: 600;
+    font-size: 15px;
+    color: #1E1E1E;
+    text-transform: inherit;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.single-community-content p {
+    font-weight: 400;
+    font-size: 12px;
+    color: #868282;
+    text-transform: inherit;
+    line-height: 1.5;
+}
+
+.single-community-ammount-raised p {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.single-community-ammount-raised p span.goalA,.single-community-bottom-content p {
+    color: #180F3F;
+}
+
+.single-community-bottom-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.single-community-bottom-content a {
+    background-image: linear-gradient(to right, #A28BFA 0%, #CE70C1 51%, #D56B70 100%);
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 5px 23px;
+    border-radius: 25px;
+}

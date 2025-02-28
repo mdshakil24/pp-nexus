@@ -1,0 +1,64 @@
+.why-choose-area {
+    padding-top: 150px;
+}
+
+.why-choose-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.single-choose-content {
+    background: #F5F3F9;
+    padding: 25px 20px;
+    border-radius: 8px;
+}
+
+.why-choose-heading h2 {
+    max-width: 700px;
+    margin-bottom: 45px;
+
+}
+
+.choolse-icon {
+    background-image: linear-gradient(to right, #E2DBFD 0%, #F0D3EC 48%, #F2D1D3 100%);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choolse-icon img {
+    width: 25px;
+    height: auto;
+}
+
+.single-choose-content h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/*========= Start Responsive CSS Code  ==========*/
+
+@media all and (max-width: 991px) {
+    .why-choose-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media all and (max-width: 575px) {
+    .why-choose-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+@media all and (max-width: 450px) {
+    .why-choose-heading h2 {
+        margin-bottom: 30px;
+    }
+}
