@@ -1,0 +1,83 @@
+.pp-properties-area {
+    margin-top: 150px;
+}
+
+.pp-property-details span {
+    font-weight: 500;
+    font-size: 12px;
+    color: #868282;
+    text-transform: inherit;
+}
+
+.pp-property-details h3 {
+    font-weight: 700;
+    color: #06042E;
+    margin: 5px 0;
+}
+
+.pp-property-details p {
+    font-weight: 500;
+    color: #1E1E1E;
+}
+
+.pp-property-inside {
+    border-bottom: 1px solid #868282;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.pp-property-inside,.single-pp-property-inside {
+    display: flex;
+    align-items: center;
+}
+.single-pp-property-inside {
+    margin-right: 25px;
+}
+
+.single-pp-property-inside p {
+    font-weight: 500;
+    color: #1E1E1E;
+    margin-left: 8px;
+}
+.pp-property-inside p.size {
+    font-weight: 500;
+    color: #1E1E1E;
+}
+.pp-property-inside p.size span {
+    font-weight: 400;
+    color: #868282;
+}
+
+.pp-company-agent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.pp-company-agent p {
+    font-weight: 500;
+    font-size: 12px;
+    color: #868282;
+    text-transform: inherit;
+    width: 55%;
+}
+.pp-company-agent p span {
+    font-weight: 700;
+    text-decoration: underline;
+    display: inline;
+}
+
+/*========= Start Responsive CSS Code  ==========*/
+
+@media all and (max-width: 1199px) {
+    .pp-properties-area {
+        margin-top: 100px;
+    }
+}
+
+
+@media all and (max-width: 991px) {
+    .pp-properties-area {
+        margin-top: 80px;
+    }
+}

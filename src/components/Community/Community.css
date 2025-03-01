@@ -137,3 +137,19 @@
     padding: 5px 23px;
     border-radius: 25px;
 }
+
+/*========= Start Responsive CSS Code  ==========*/
+
+@media all and (max-width: 1199px) {
+    .pp-community-area {
+        margin-top: 100px;
+    }
+}
+
+
+
+@media all and (max-width: 991px) {
+    .pp-community-area {
+        margin-top: 80px;
+    }
+}

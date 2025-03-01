@@ -43,9 +43,20 @@
     font-size: 13px;
 }
 
+/*========= Start Responsive CSS Code  ==========*/
+
+@media all and (max-width: 1199px) {
+    .pp-testimonials-area {
+        padding-top: 100px;
+    }
+}
+
 @media all and (max-width: 991px) {
     .pp-testimonials-content {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .pp-testimonials-area {
+        padding-top: 80px;
     }
 }
 

@@ -125,7 +125,21 @@
     -webkit-text-fill-color: transparent
 }
 
+/*========= Start Responsive CSS Code  ==========*/
+
+@media all and (max-width: 1199px) {
+    .pp-contact-area {
+        padding-top: 100px;
+    }
+}
+
+
+
 @media all and (max-width: 991px) {
+
+    .pp-contact-area {
+        padding-top: 80px;
+    }
     .pp-contact-content {
         padding: 60px 40px;
     }

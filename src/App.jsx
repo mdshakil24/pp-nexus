@@ -7,6 +7,10 @@ import Whychoose from './components/Whychoose/Whychoose'
 import Testimonials from './components/Testimonials/Testimonials'
 import Newspaper from './components/Newspaper/Newspaper'
 import Community from './components/Community/Community'
+import Jobs from './components/Jobs/Jobs'
+import Cars from './components/Cars/Cars'
+import Properties from './components/Properties/Properties'
+// import MySwiper from './components/Myswiper/Myswiper'
 
 function App() {
 
@@ -15,6 +19,10 @@ function App() {
     <>
         <Navbar></Navbar>
         <Hero></Hero>
+        <Jobs></Jobs>
+        {/* <MySwiper></MySwiper> */}
+        <Cars></Cars>
+        <Properties></Properties>
         <Community></Community>
         <Newspaper></Newspaper>
         <Whychoose></Whychoose>

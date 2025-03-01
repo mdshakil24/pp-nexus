@@ -18,7 +18,7 @@ const Newspaper = () => {
             category: "E.U. News",
             title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             date: "November 20, 2023",
-            size: "small",
+            size: "medium",
         },
         {
             id: 333,
@@ -42,7 +42,7 @@ const Newspaper = () => {
             category: "Sport",
             title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             date: "November 20, 2023",
-            size: "small",
+            size: "medium",
         },
     ];
 
@@ -63,18 +63,20 @@ const Newspaper = () => {
 
                     <div className="news-grid">
                         {newsData.map((news) => (
-                            <div key={news.id} className={`news-item ${news.size}`}>
-                                <img src={news.image} alt="News" />
-                                <div className="overlay">
-                                    <span className="category">{news.category}</span>
-                                    <h3>{news.title}</h3>
-                                    <p>{news.date}</p>
+                            <div key={news.id} className='single-news-item'>
+                                <div className={`news-item ${news.size}`}>
+                                    <img src={news.image} alt="News" />
+                                    <div className="overlay">
+                                        <span className="category">{news.category}</span>
+                                        <h3>{news.title}</h3>
+                                        <p>{news.date}</p>
+                                    </div>
                                 </div>
                             </div>
                         ))}
                     </div>
 
-                    
+
                 </div>
             </div>
         </div>

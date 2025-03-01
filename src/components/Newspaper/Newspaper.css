@@ -45,7 +45,7 @@
     text-transform: inherit;
     margin: 8px 0;
 }
-.news-item.small .overlay h3 {
+.news-item.small .overlay h3,.news-item.medium .overlay h3 {
     font-size: 12px;
 }
 .category {
@@ -74,7 +74,20 @@
 }
 
 
-/* Responsive */
+/*========= Start Responsive CSS Code  ==========*/
+
+@media all and (max-width: 1199px) {
+    .pp-newspaper-area {
+        padding-top: 100px;
+    }
+}
+
+@media all and (max-width: 991px) {
+    .pp-newspaper-area {
+        padding-top: 80px;
+    }
+}
+
 @media (max-width: 768px) {
     .news-grid {
         grid-template-columns: 1fr;
